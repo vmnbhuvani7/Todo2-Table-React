@@ -62,6 +62,7 @@ export class App extends Component {
     })
   }
   render() {
+    
     let array = [];
 
     let itemLeft = this.state.todos.filter((todo) => {
@@ -86,6 +87,7 @@ export class App extends Component {
       <div className="App" >
         <AddTodo addTodo={this.addTodo}></AddTodo>
         {array && array.map((todo, index) => {
+         
           return (
             <div key={index}>
               <ListTodo
